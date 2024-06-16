@@ -1,0 +1,392 @@
+@font-face {
+    font-family: pankoj;
+    src: url("/PROJECT_WEB/COPY/Sundown Stdio/NeueHaasDisplay-Roman.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: pankoj;
+}
+
+html,
+body {
+    background-color: rgb(239, 234, 227);
+    /* border: 2px solid red; */
+    min-height: 100%;
+    /* width: 100vw; */
+    overflow-x: hidden;
+    width: 100%;
+}
+
+#page-1 {
+    width: 100%;
+    padding: 2vw 3vw;
+    background-color: rgb(239, 234, 227);
+    justify-content: space-between;
+
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#page-1 a img {
+    width: 10vw;
+}
+
+#page-1 #right-part ul {
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    z-index: 10;
+}
+
+#page-1 #right-part li a {
+    position: relative;
+    font-size: 1.1vw;
+    color: rgb(10, 9, 9);
+    text-decoration: none;
+    z-index: 10;
+    transition: all 0.1s;
+    padding: 2vw 1.5vw;
+    border-radius: 50px;
+}
+
+#page-1 #right-part li {
+    position: relative;
+    position: relative;
+    list-style: none;
+    padding: .6vw 0vw;
+    border-radius: 50px;
+    border: 1px solid rgb(25, 25, 25, 0.2);
+    z-index: 10;
+    overflow: hidden;
+}
+
+#page-1 #right-part ul li::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    border-radius: 50px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: black;
+    transition: all 0.5s;
+
+}
+
+#page-1 #right-part li a:hover {
+    color: white;
+    /* position: relative; */
+}
+
+#page-1 #right-part ul li:hover::after {
+    top: 0px;
+}
+
+/* page2 */
+#page-2 {
+    width: 90vw;
+    margin: 4vw;
+    padding-bottom: 9vh;
+    height: 80vh;
+    background-color: rgb(239, 234, 227);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid rgb(23, 22, 22, 0.2);
+    position: relative;
+    overflow: hidden;
+    /* border: 2px solid red; */
+}
+
+.contain1 {
+    width: 30vw;
+    font-size: 2vw;
+    line-height: 30px;
+    font-weight: 900;
+}
+
+.contain2 {
+    width: 30vw;
+    font-size: 8vw;
+    font-weight: 900;
+    text-align: right;
+
+}
+
+.animated-bac :nth-child(3) {
+
+    bottom: -450px;
+    right: -1vw;
+    animation: div-3 2s infinite alternate 1s;
+    transition: all 1s ease-in-out;
+}
+
+.animated-bac :nth-child(2) {
+
+    bottom: -490px;
+    right: 2vw;
+    animation: div-2 2s infinite alternate;
+    transition: all 1s ease-in-out;
+}
+
+.animated-bac :nth-child(1) {
+    bottom: -490px;
+    right: 5vw;
+    animation: div-1 2s infinite alternate;
+    transition: all 1s ease-in-out;
+}
+
+.animated-bac .same {
+    width: 35vw;
+    z-index: 10;
+    position: absolute;
+    height: 35vw;
+    background-color: rgb(254, 51, 10);
+    filter: blur(25px);
+    border-radius: 50%;
+}
+
+@keyframes div-1 {
+    from {
+        transform: translate(-5%, -5%);
+    }
+
+    to {
+        transform: translate(-10%, 2%);
+
+    }
+}
+
+@keyframes div-2 {
+    from {
+        transform: translate(-5%, -7%);
+    }
+
+    to {
+        transform: translate(10%, 6%);
+
+    }
+}
+
+@keyframes div-3 {
+    from {
+        transform: translate(-0%, -5%);
+    }
+
+    to {
+        transform: translate(-5%, 0%);
+
+    }
+}
+
+/* page3 */
+#pang-3 {
+    margin: 0 4vw;
+}
+
+#pang-3 video {
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    border-radius: 20px;
+}
+
+#movable-text {
+    margin: 10vw 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.cont {
+    display: inline-block;
+    white-space: nowrap;
+    animation: mov 10s infinite linear;
+    transition: all 1s ease-in-out;
+}
+
+.cont h2 {
+    font-size: 10vw;
+    display: inline-block;
+    white-space: nowrap;
+
+}
+
+.cont .round {
+    display: inline-block;
+    width: 4vw;
+    height: 4vw;
+    margin: 1.5vw 4vw;
+    background-color: rgb(254, 51, 10);
+
+    border-radius: 50%;
+}
+
+@keyframes mov {
+    from {
+        transform: translate(0%);
+    }
+
+    to {
+        transform: translate(-100%);
+
+    }
+}
+
+/* page-4 */
+#page-4 {
+    margin: 6vw;
+    height: 80vh;
+    position: relative;
+    /* border: 2px solid red; */
+}
+
+#page-4 .page-4-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#page-4 .page-4-container h2 {
+    font-size: 4vw;
+    width: 100%;
+    z-index: 10;
+}
+
+#page-4 .page-4-container>div {
+    display: flex;
+    width: 23%;
+    flex-direction: column;
+    margin-top: 19vh;
+    justify-content: flex-end;
+}
+
+#page-4 .page-4-container div img {
+    border-radius: 25px;
+}
+
+#page-4 .page-4-container div>div {
+    margin-top: 3vw;
+    line-height: 4vh;
+    width: 100%;
+}
+
+.shap {
+    position: absolute;
+    bottom: 0px;
+    z-index: 1;
+    left: 20vw;
+}
+
+.shap2 {
+    position: absolute;
+    bottom: 8px;
+    left: 25vw;
+}
+
+.shap div {
+    height: 25vw;
+    width: 25vw;
+    background-color: red;
+    filter: blur(20px);
+    border-radius: 50%;
+    animation: shap1 3s linear alternate infinite;
+    transition: all 2s linear;
+    
+}
+
+.shap2 div {
+    filter: blur(25px);
+    height: 25vw;
+    width: 25vw;
+    background: linear-gradient(to top, red, rgb(252, 76, 1));
+    border-radius: 50%;
+    animation: shap2 3s linear alternate infinite;
+    transition: all 2s linear ;
+}
+@keyframes shap1 {
+    
+    from{
+        transform: translate(10%,-10%) skew(20deg );
+    }
+    to{
+        transform: translate(-10%,10%);
+    }
+}
+@keyframes shap2 {
+    
+    from{
+        transform: translate(20%,-10%) ;
+    }
+    to{
+        transform: translate(-10%,10%);
+    }
+}
+.line-text>div{
+    width: 10px;
+    height: 10px;
+    margin: 1px 4px;
+    background-color: red;
+    text-align: center;
+    border-radius: 50%;
+    display: inline-block;
+}
+.line-text{
+    margin-left: 3vw;
+}
+#page-5 {
+    width: 100%;
+    margin-top: 8vh;
+    /* border: 2px solid red ; */
+    position: relative;
+}
+.hero{
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 14vh;
+    padding: 0vw 2vw;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(6, 5, 5,0.3);
+}
+.overflow{
+    content:"";
+    background-color: rgb(255, 152, 49);
+    width: 100vw;
+    top: -101%;
+    left: 0;
+    position: absolute;
+    transition: all 0.3s  ease-in-out;
+    height: 14vh;
+}
+.hero:hover .overflow{
+    top: 0%;
+}
+.left{
+    display: flex;
+    text-align: right;
+    z-index: 10;
+ flex-direction: column;
+}
+.hero h2{
+    z-index: 10;
+    font-size: 3vw;
+}
+.videoswitch{
+    width: 20vw;
+    height: 60vh;
+    border-radius: 20px;
+    /* background-color: red; */
+    /* background-image: url("https://wallpapercave.com/wp/JTpVKUS.jpg"); */
+   background-position: center;
+
+   background-size: cover;
+    position: fixed;
+    top: 20px;
+    display: none;
+    left: 50vw;
+    z-index: 100;
+}

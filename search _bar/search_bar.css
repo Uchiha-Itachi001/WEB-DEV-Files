@@ -1,0 +1,37 @@
+.navbar{
+    
+    border: 2px solid;
+    padding-right: 20px;
+    border-radius: 90px;
+    background-color: rgb(59, 232, 232);
+}
+
+ul{
+    overflow: auto;            
+}
+
+li{
+    list-style:none;
+    float: left;
+    padding: 1px 8px;
+    line-break: auto;
+}
+
+a{
+    text-decoration: none;
+    text-shadow: 3px;
+}
+
+a:hover{
+    color: rgb(182, 35, 148);
+    cursor: default;
+    background-color: rgb(211, 210, 236);
+}
+
+#search{
+    float: right;
+    padding: 1px 30px;
+    border-radius: 20px;
+}
+
+

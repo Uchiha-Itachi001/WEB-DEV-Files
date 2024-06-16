@@ -1,0 +1,22 @@
+p{
+    color: yellow;
+    border-width: 3px;
+    border-color: transparent;
+    border-style: solid;
+    background-image: url(/hasira.jpg);
+    /* border-bottom:black; */
+    height: 70px;
+    padding-left: 20px;
+    margin-left: 20px;
+    width:1000px;
+    border-top-left-radius: 2px;
+    color: yellow
+    border-bottom-right-radius: 2px;
+    f
+/* border-color: transparent; */
+}
+*{
+    border:0;
+    margin: 0;
+    padding: 0;
+}

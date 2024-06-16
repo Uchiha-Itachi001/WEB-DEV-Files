@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins:wght@400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins:wght@400;600&display=swap');
+* {
+    color: white;
+    background-color: rgb(8, 7, 7);
+    margin: 0;
+    padding: 0;
+}
+#div{
+
+    position: relative;
+    background: rgb(0, 0, 0); 
+    top: 0;
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 60px;
+    filter: blur(20px);
+}
+header {
+    position: absolute;
+    border: 2px solid;
+    border: 3px solid rgb(28, 180, 226);
+    top: 0;
+    left: 5px;
+    width: 96vw;
+    display: flex;
+    background: transparent;
+    padding: 20px;
+    gap: 80px;
+    justify-content: space-around;
+    z-index: 100;
+}
+
+header a {
+    max-width: 50%;
+
+    background: transparent;
+    color: rgb(176, 228, 246);
+    z-index: 200;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+section {
+    position: absolute;
+    top: 0px;
+}
+
+section div img {
+    width: 100vw;
+    position: absolute;
+    top: 0px;
+    object-fit: cover;
+    object-position: center;
+    height: 100vh;
+}
+
+main div {
+    position: absolute;
+    width: max-content;
+    display: flex;
+    bottom: 50px;
+    left: 50%;
+    gap: 40px;
+}
+
+main div .item {
+    width: 40px;
+}
+
+.btn {
+    position: relative;
+    left: 500px;
+    top: 650px;
+    display: flex;
+    background: transparent;
+    gap: 20px;
+}
+
+.button1,
+.button2,
+.button3,
+.button4 {
+    position: relative;
+    color: rgb(240, 228, 228);
+    font-size: 19px;
+    width: 100px;
+    font-family: "poppins";
+    text-shadow: 2px 2px black;
+    border-radius: 10px;
+    height: 50px;
+    padding: 8px;
+    z-index: 200;
+    object-fit: cover;
+}
+
+.button1 {
+
+    background-image: url("/for fum/3/jpg/goku.jpg");
+
+    background-size: contain;
+    background-position: center;
+}
+
+.button2 {
+    
+    background-image: url("/for fum/3/jpg/gojo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.button3 {
+    
+    object-fit: cover;
+    background-image: url("/for fum/3/jpg/lofi.jpg");
+    background-size: contain;
+    background-position: center;
+}
+
+.button4 {
+    background-position: center;
+    object-fit: contain;
+    background-size: contain;
+    background-image: url("/for fum/3/jpg/naruto.jpg");
+}
+
+section div .heading {
+    position: absolute;
+    color: white;
+    background: transparent;
+    z-index: 100;
+    top: 50px;
+    font-family: "poppins";
+    text-shadow: 3px 3px 40px rgb(31, 28, 28);
+    font-weight: 900;
+    font-size: 60px;
+    filter: blur(20px);
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 1s ease;
+    animation: heading 1s forwards;
+}
+
+@keyframes heading {
+
+    to {
+        transform: translateY(0px);
+        filter: blur(0px);
+        opacity: 1;
+    }
+
+}
+
+section div .type {
+    position: absolute;
+    color: white;
+    background: transparent;
+    animation: heading 2s forwards 0.2s;
+    z-index: 100;
+    text-decoration: underline;
+    top: 150px;
+    filter: blur(20px);
+    opacity: 0;
+    transform: translateY(40px);
+    color: rgb(100, 94, 157);
+    font-size: 40px;
+
+    font-family: "poppins";
+    font-weight: 900;
+
+}
+
+section div .character {
+    position: absolute;
+    color: white;
+    background: transparent;
+    z-index: 100;
+    top: 30px;
+    color: rgb(153, 213, 201);
+    text-shadow: 3px 3px 30px rgb(214, 204, 204);
+    animation: heading 2s forwards 0.03s;
+    font-family: "poppins";
+    filter: blur(20px);
+    opacity: 0;
+    transform: translateY(40px);
+    font-weight: 900;
+
+}
+
+section div .info {
+
+    position: absolute;
+    top: 220px;
+
+    animation: heading 2s forwards 0.4s;
+    
+    min-width: 200px;
+    box-sizing: border-box;
+    filter: blur(20px);
+    opacity: 0;
+    transform: translateY(40px);
+    background: transparent;
+    z-index: 100;
+}
+
+.lol {
+
+    display: none;
+
+}
+
+/*
+@keyframes pankoj {
+    from {
+        display: none;
+    }
+    to {
+        transform: scale(0);
+    }
+    
+}
+*/
+section div .section-separater {
+    box-sizing: border-box;
+    position: absolute;
+    top: 100px;
+    overflow: initial;
+    left: 100px;
+    padding: 20px;
+    height: 500px;
+    min-width: 550px;
+    background: transparent;
+    z-index: 100;
+    background-color: rgba(11, 10, 10, 0.5);
+    border-radius: 20px 0px 20px 0px;
+    box-sizing: border-box;
+}
+
+section div .info p {
+    padding: 30px;
+    padding-left: 0;
+    font-size: 20px;
+    color: rgb(153, 213, 201);
+    font-family: "Aclonica", sans-serif;
+    background-color: transparent;
+}
+
+section div .info a {
+    background-color: transparent;
+    color: rgb(80, 80, 174);
+}
+
+#btn {
+    display: flex;
+    width: 500px;
+    justify-content: center;
+    background: transparent;
+    align-items: center;
+    gap: 30px;
+}
+.anime-btn{
+    padding: 10px;
+    font-family: "Aclonica", sans-serif;
+    font-weight: 600;
+    letter-spacing: 2px;
+    width: 100px;
+    border-radius: 3px;
+
+}   
+#btn :last-child{
+    background-color: transparent;
+}
+#btn :last-child:hover{
+    
+    box-shadow: 2px 3px 10px ;
+    color: rgb(176, 228, 246);
+
+}
+#btn :first-child{
+    border: none;
+    transition: all 0.5s ease-out;
+}
+#btn :first-child:hover{
+    background: rgb(59, 54, 54);
+    box-shadow: 2px 3px 10px ;
+   color: rgb(176, 228, 246);
+}
+
+@media only screen and (max-width :567px){
+    section div .heading{
+        /* color:red; */
+        font-size: 40px;
+    }
+    header{
+        width: auto;
+        gap: 2rem;
+    }
+    section div .section-separater{
+        min-width: 23rem;
+        left: 10px;
+    }
+    section div .type{
+        top: 108px;
+    }
+    section div .info{
+        top: 150px;
+    }
+    section div .info p{
+        padding-top: 2px;
+        font-size: 16px;
+    }
+    section div .info{
+        width: 300px;
+    }
+    section div .section-separater{
+        top: 80px;
+    }
+    #btn{
+        width: 320px;
+    }
+    .btn{
+        left: 0;
+        top:590px ;
+    }
+    .button1, .button2, .button3, .button4{
+        width: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        left: 1.02rem;
+    }
+
+}

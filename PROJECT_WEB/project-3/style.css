@@ -1,0 +1,189 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Salsa', cursive;
+}
+body{
+    background-color:rgb(238, 226, 211) ;
+    
+    position: inherit;
+    border: 3px solid  red ;
+    border-radius: 20px;
+
+    margin: 2px 3px;
+}
+/* navbar */
+header{
+    display: block;
+   height: 101px;
+   
+    position: sticky;
+    top: 0px;
+    
+
+}
+.navbar{
+    border: 2px solid #663399;
+    border-radius: 20px;
+    margin: 20px 30px;
+    background-color: rgb(53, 149, 239);
+    box-shadow: 20px 2px 4px 2px rgb(81, 68, 62);
+   
+}
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    padding: 0.2em 0.2em;
+}
+.navbar ul li{
+    list-style: none;
+    padding: 1.2em 1.3em;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 246, 246);
+    padding: 7px 9px;
+border-radius: 20px;
+border: 2px solid transparent;
+box-shadow: 2px 2px 4px 2px inset  rgb(76, 99, 145);
+}
+.navbar ul li a:hover{
+    background-color: rgb(104, 104, 226);
+    box-shadow: 3px 3px 3px 2px rgb(79, 76, 227);
+
+}
+
+/* responsive */
+@media only screen and (max-width:550px){
+    header{
+        display: block;
+       height: 55px;
+    }
+    .navbar ul li{
+        padding: 6px 9px;
+    }
+    .navbar ul li a{
+        font-size: 0.8rem;
+    }
+}
+@media only screen and (max-width:428px){
+    header{
+        display: block;
+        height: 55px;
+    }
+    .navbar ul li{
+        padding: 2px;
+        padding-bottom: 8px;
+        /* background-color: red; */
+    }
+    .navbar ul li a{
+        font-size: 0.4rem;
+    }
+    
+}
+
+
+/* main box */
+
+main{
+    border: 5px solid rgb(0, 255, 115);
+    display: flex;
+    background: url("/IMAGE/bacgrouind.jpg") no-repeat;
+    background-size: 100vw 100vh;
+    border-radius: 20px;
+    background-position-x: center;
+}
+.box{
+    border: 2px solid red;      
+    border-radius: 20px; 
+    box-shadow: 3px 3px 5px black; 
+    margin: 20px 10px;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    color: rgb(153, 244, 194);
+    text-shadow: 4px 4px 6px  rgb(10, 8, 8);
+    
+    padding: 5px 5px;
+    padding-top: 40px;
+    font-weight: bold;
+    
+}
+
+@media only screen and (max-width:1396px){
+    .box{
+        scroll-snap-type: proximity ;
+        overflow: auto;
+    }
+}
+@media only screen and (max-width:658px){
+    main{
+        
+        flex-direction: column-reverse;
+    }
+    
+    main{
+        background-size: cover;
+    }
+}
+@media only screen and (max-width:550px){
+    main{
+        
+        flex-direction: column-reverse;
+    }
+    .box2{
+        height: auto;
+    }
+    .box1{
+        height: auto;
+    }
+    main{
+        background-size: cover;
+    }
+}
+section::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    width: 100%;
+    opacity: 0.8;
+    z-index: -1;
+    border-radius: 20px;
+    background: url("/IMAGE/comic.jpg") center center/cover;
+}
+.sharingan{
+    border: 2px solid red;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    top: 80vh;
+    right: 7px;
+    border-radius: 200px;
+    box-shadow: 4px 4px 8px rgb(0, 0, 0);
+}
+section{
+    border: 2px solid rebeccapurple;
+    border-radius: 20px;
+    padding: 2px 2px;
+    margin: 20px 3px;
+    text-align: center;
+    position: relative;
+    font-size: 20px;
+    font-weight: 20px;
+    font-family: 'Lemon', serif;
+    font-weight: bold;
+    color: rgb(17, 23, 18);
+    text-shadow: 3px 2px 3px rgb(218, 17, 117);
+   
+    
+}
+footer{
+    display: block;
+    border-radius: 20px;
+    background-color: black;
+    color: rgb(237, 221, 221);
+    text-align: center;
+    padding: 4px 3px;
+    margin: 4px 4px;
+}

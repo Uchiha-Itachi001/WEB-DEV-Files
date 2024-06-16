@@ -1,0 +1,117 @@
+body{
+   
+    background-repeat: no-repeat; 
+    background-position: center;  
+    background-size: cover;
+    background-position-x: right ;
+    height: 160vh;
+    background-color: aqua;
+    margin: 2px;
+}
+h1{
+    background-image: url(/PRACTIC/comic.jpg);
+
+    border:red;
+}
+/* section{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+} */
+#lol{
+    background-image: url(/PRACTIC/hasira.jpg);
+    border-right:100px;
+    
+  
+    background-clip: text;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        color: rgb(31, 174, 102);
+    font-size: 100px;
+    height: 200px;
+    width: 1534px;
+    text-align: center;
+    
+}
+*{
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+#info{
+    
+    font-size: 70px;
+
+}
+.info{
+    
+    font-size: 70px;
+
+}
+
+.pankoj{
+    font-size: 10px;
+    text-shadow :black;
+    height: 100px;
+    width: 2000px;
+    border-width: 5px;
+    border-color: red;
+    font-size: 60px ;
+    background-image: url(/PRACTIC/bacgrouind.jpg);
+        background-position: left;
+    padding: 100PX;
+    padding-left: 260px;
+    background-clip: text;
+   color: transparent;
+  
+}
+.p{
+     border-width: 2px;
+   border-style: solid;
+   background-image: url(/PRACTIC/attack_on_titen.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   border-radius: 2px;
+   
+}
+#anime{
+    text-align: center; 
+    font-size: 30px;
+}
+#cool{
+    background-color: red;
+}
+#list-of-anime{
+    background-image: url(/PRACTIC/hasira.jpg);
+    background-clip: text;
+    font-family: 'Abril Fatface', serif;
+    color: transparent;
+    font-size: 50px;
+
+}
+.image{
+    /* font-size: 70px; */
+}
+.goku{
+    /* border-radius: 100000000000px;
+    height: 800px;
+    width: 899px; */
+}
+.po{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    /* font-style: italic; */
+    font-family: 'Playfair Display', serif;
+}
+.all{
+    background-image: url(/PRACTIC/light.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#code{
+    text-align: center;
+}
+.lo
+{
+    text-align: center;
+}

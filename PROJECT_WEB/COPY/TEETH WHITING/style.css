@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+/* container */
+
+.contain > div{
+    display: flex;
+    flex-wrap: wrap;
+    color: rgb(156 201 245);
+}
+.contain img{
+    filter: invert(1);
+    width: 15px;
+}
+.contain :hover{
+    color: rgb(252, 252, 252);
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+.massage-box{
+    background-color: rgb(0, 160, 240);
+ 
+    padding: 10px 11px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right:20px;
+}
+.massage-box img{
+    width: 30px;
+}
+.lol
+{
+    height: 80px;
+}
+.top-navbar{
+    position: fixed;
+   
+    width: 100%;
+    justify-content: space-between;
+    background-color: rgb(45, 57, 75);
+}
+
+
+/*left ansd right portion*/
+
+.left-portion{
+    gap: 30px;
+    position: relative;;
+    left: 20px;
+}
+
+.right-portion{
+    position: relative;;
+    gap: 30px; 
+    right: 20px;
+}
+
+/*left ansd right portion :: child*/
+
+.left-portion :nth-child(1){
+    text-align: center;
+}
+.top-navbar,.left-portion, .right-portion{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+
+/*buttons*/
+.btn{
+   display: flex;
+   background-color: rgb(69 179 73);
+   gap: 10px;
+   padding: 13px 40px;
+   
+   border-radius: 4px;
+   color: white;
+}
+.btn-2{
+    padding: 13px 20px;
+    margin: 5px 0px;    
+    border-radius: 4px;
+    
+}
+.btn-2:hover{
+    background-color: rgb(0, 163, 255);
+    color: white;
+}
+.btn-2 div{
+    color: black;
+}
+.btn:hover{
+    background-color: rgb(39 175 80);    
+}
+.left-btn{
+    background-color: transparent;
+    border: 1px solid rgb(179 200 231);
+    position: relative;
+    border-radius: 3px;
+    top:-7px ;
+    padding: 15px;
+}
+.left-btn >img{
+    position: relative;
+    display: flex;
+    justify-content: left; 
+}
+
+
+/* svg manupulation */
+.svgs
+{
+    display: flex;
+    gap: 20px;
+}
+.svg{
+    width: 25px;
+}
+.svg:hover{
+    fill: white;
+}
+
+
+/* second navbar  */
+.first-hero{
+    color: #999a9b;
+    display: flex;
+    gap: 20px;
+}
+.first-heroi div{
+    text-align: center;
+}
+.round-box{
+    padding: 10px 10px;
+    width: 25px;
+    align-items: center;
+    border-radius: 50%;
+    background-color: #999A9B;
+}
+.round-box  img {
+    width: 20px;
+}
+.second-top-bar{
+    display: flex;
+}
